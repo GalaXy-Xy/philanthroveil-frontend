@@ -6,6 +6,7 @@
     "dev:mock": "node scripts/check-node.mjs && node scripts/genabi.mjs && next dev",
     "dev": "node scripts/genabi.mjs && next dev",
     "build": "node scripts/genabi.mjs && next build",
+    "build:pages": "node scripts/genabi.mjs || echo 'Skipping genabi' && next build",
     "start": "next start",
     "lint": "next lint",
     "genabi": "node scripts/genabi.mjs"
